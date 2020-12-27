@@ -25,7 +25,7 @@ namespace WebApplication1.Controllers
 
         public IActionResult Privacy()
         {
-            return RedirectToAction("Category","Category"); // Trying RedirecToAction with different views location.  
+            return RedirectToAction("Category","Category"); // This redirect to "../Category/Category" instead of "../Home/Privacy"
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
